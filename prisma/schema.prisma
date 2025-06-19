@@ -1,0 +1,70 @@
+// prisma/schema.prisma
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Usuario {
+  id        Int         @id @default(autoincrement())
+  nome      String
+  email     String      @unique
+  senha     String
+  metas     Meta[]
+  historico Historico[]
+}
+
+model Grupo {
+  id         Int        @id @default(autoincrement())
+  nome       String     @unique
+  exercicios Exercicio[]
+}
+
+model Exercicio {
+  id          Int                  @id @default(autoincrement())
+  nome        String               @unique
+  grupo       Grupo                @relation(fields: [grupoId], references: [id])
+  grupoId     Int
+  metas       MetaExercicio[]      // relação many-to-many com dados extras
+  historico   Historico[]
+}
+
+model Historico {
+  id               Int       @id @default(autoincrement())
+  usuario          Usuario   @relation(fields: [usuarioId], references: [id])
+  usuarioId        Int
+  exercicio        Exercicio @relation(fields: [exercicioId], references: [id])
+  exercicioId      Int
+  data             DateTime  @default(now())
+  performedSeries  Int       @default(0) // séries realmente executadas
+  performedReps    Int       @default(0) // repetições realmente executadas
+}
+
+model Meta {
+  id          Int                @id @default(autoincrement())
+  nome        String
+  concluida   Boolean            @default(false)
+  usuario     Usuario            @relation(fields: [usuarioId], references: [id])
+  usuarioId   Int
+  createdAt   DateTime           @default(now())
+  exercicios  MetaExercicio[]    // associação com dados de target
+}
+
+model MetaExercicio {
+  id              Int        @id @default(autoincrement())
+  meta            Meta       @relation(fields: [metaId], references: [id])
+  metaId          Int
+  exercicio       Exercicio  @relation(fields: [exercicioId], references: [id])
+  exercicioId     Int
+  targetSeries    Int        // séries alvo para esta meta
+  targetReps      Int        // repetições alvo para esta meta
+  targetPeso      Float      @default(0) // peso alvo (kg) para esta meta, default=0
+
+  @@unique([metaId, exercicioId])
+}
