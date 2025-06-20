@@ -3,7 +3,6 @@ import { Platform } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 //@ts-ignore
 import Ionicons from 'react-native-vector-icons/Ionicons';
-
 import HomeScreen from '../screens/HomeScreen';
 import Historico from '../screens/Historico';
 import Metas from '../screens/Metas';
