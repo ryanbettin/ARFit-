@@ -38,14 +38,12 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        {/* Autenticação */}
+       
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Cadastro" component={Cadastro} />
 
-        {/* Main Navigation (Tabs) */}
         <Stack.Screen name="Home" component={Navbar} />
 
-        {/* Telas de Exercícios (Stack) */}
         <Stack.Screen name="AbdominalSupra" component={AbdominalSupra} />
         <Stack.Screen name="Prancha" component={Prancha} />
         <Stack.Screen name="ElevacaoDePernas" component={ElevacaoDePernas} />
