@@ -136,7 +136,6 @@ export default function Historico() {
     </SafeAreaView>
   );
 }
-
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
