@@ -9,7 +9,7 @@ import Navbar from './src/components/Navbar';
 import Login from './src/screens/Login';
 import Cadastro from './src/screens/Cadastro';
 
-// Exercise components (Stack screens)
+
 import AbdominalSupra from './src/exercicios/AbdominalSupra';
 import Prancha from './src/exercicios/Prancha';
 import ElevacaoDePernas from './src/exercicios/ElevacaoDePernas';
