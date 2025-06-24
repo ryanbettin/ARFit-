@@ -5,7 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Navbar from './src/components/Navbar';
 
-// Auth Screens
+
 import Login from './src/screens/Login';
 import Cadastro from './src/screens/Cadastro';
 
