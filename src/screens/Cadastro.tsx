@@ -63,7 +63,6 @@ export default function Cadastro({ navigation }: any) {
       setLoading(false);
     }
   };
-
   return (
     <KeyboardAvoidingView
       style={styles.wrapper}
