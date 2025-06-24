@@ -1,4 +1,3 @@
-// src/screens/Perfil.tsx
 import React, { useEffect, useState, useCallback } from 'react';
 import {
   SafeAreaView,
@@ -103,7 +102,6 @@ export default function Perfil({ navigation }: any) {
       </SafeAreaView>
     );
   }
-
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.content}>
