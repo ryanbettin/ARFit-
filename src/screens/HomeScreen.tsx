@@ -14,10 +14,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Toast from 'react-native-toast-message';
 import { apiClient, api } from '../api/apiConfig';
 
-// @ts-ignore
 import logo from '../../assets/logo.png';
 
-// Tipagens
 interface Exercicio { id: number; nome: string; grupoId: number; }
 interface Grupo { id: number; nome: string; exercicios: Exercicio[]; }
 
@@ -124,7 +122,6 @@ export default function HomeScreen() {
     </SafeAreaView>
   );
 }
-
 const styles = StyleSheet.create({
   wrapper: { flex: 1, backgroundColor: BACKGROUND },
   loadingContainer: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: BACKGROUND },
