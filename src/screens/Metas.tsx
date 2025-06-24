@@ -111,7 +111,6 @@ export default function MetasScreen() {
     [historico]
   );
 
-  // Seleciona/exclui exercício
   const toggleSelect = (id: number) => {
     setSelectedIds(prev =>
       prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]
@@ -123,7 +122,6 @@ export default function MetasScreen() {
     });
   };
 
-  // Cria meta
   const handleCreate = async () => {
     if (!nomeMeta.trim() || selectedIds.length === 0) {
       Toast.show({ type: 'error', text1: 'Atenção', text2: 'Informe nome e ao menos um exercício.' });
@@ -198,7 +196,6 @@ export default function MetasScreen() {
         <Text style={styles.fabText}>Nova Meta</Text>
       </TouchableOpacity>
 
-      {/* Modal Criar Meta */}
       <Modal
         visible={showCreate}
         transparent
