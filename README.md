@@ -1,4 +1,4 @@
-# 💪 ARFit – Aplicativo de Treinos Inteligente
+# 💪 ARFit – Aplicativo de Treinos
 O ARFit é um aplicativo mobile voltado para pessoas que desejam melhorar sua saúde física através de treinos personalizados. O app oferece uma experiência intuitiva, permitindo ao usuário acompanhar seus treinos, visualizar exercícios por grupo muscular, definir metas. Ele é ideal para quem busca praticidade, foco e motivação na rotina de treinos.
 
 ## 🚀 Tecnologias Utilizadas
