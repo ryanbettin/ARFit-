@@ -18,6 +18,8 @@ model Usuario {
   senha     String
   metas     Meta[]
   historico Historico[]
+  xp        Int         @default(0)
+  nivel     Int         @default(1)
 }
 
 model Grupo {
