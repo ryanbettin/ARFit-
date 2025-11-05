@@ -1,0 +1,14 @@
+node_modules
+.expo
+.expo-shared
+android/app/build
+android/build
+android/.gradle
+android/.cxx
+ios
+ios-build
+build
+dist
+fastlane
+.git
+back/
