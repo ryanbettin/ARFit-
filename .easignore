@@ -1,14 +1,42 @@
-node_modules
-.expo
-.expo-shared
-android/app/build
-android/build
-android/.gradle
-android/.cxx
-ios
-ios-build
-build
-dist
-fastlane
-.git
+# Node / Expo
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Android caches
+android/.gradle/
+android/.cxx/
+android/.idea/
+android/.externalNativeBuild/
+android/app/.cxx/
+android/app/.gradle/
+android/app/build/
+android/app/src/debug/
+android/app/src/androidTest/
+android/local.properties
+android/app/google-services.json
+
+# Keep Gradle wrapper + scripts
+!android/gradlew
+!android/gradlew.bat
+!android/gradle/wrapper/gradle-wrapper.jar
+!android/gradle/wrapper/gradle-wrapper.properties
+
+# iOS (não usado no build Android manged)
+ios/
+ios-build/
+
+# Miscelânea
+*.iml
+*.keystore
+*.jks
+*.orig.*
+.DS_Store
+Thumbs.db
 back/
