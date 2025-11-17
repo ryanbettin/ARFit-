@@ -5,6 +5,7 @@ import { autenticar }   from '../middlewares/auth';
 
 const router = express.Router();
 
+
 // Rota para obter perfil do usuário autenticado
 router.get('/', autenticar, perfilUsuario);
 
