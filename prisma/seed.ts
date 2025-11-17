@@ -80,6 +80,7 @@ async function main() {
       },
     });
 
+    
     for (const exercicio of grupoData.exercicios) {
       await prisma.exercicio.create({
         data: {
