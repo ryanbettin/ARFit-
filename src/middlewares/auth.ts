@@ -1,6 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
-
 // Extensão de Request para incluir usuário autenticado
 interface AuthRequest extends Request {
   user?: { id: number };
