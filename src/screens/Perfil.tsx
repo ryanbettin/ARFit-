@@ -104,7 +104,7 @@ export default function Perfil({ navigation }: any) {
 
       if (nivel > oldLevel) animateLevelUp();
 
-      // Atualiza o usuário com o nível corrigido
+      
       setUsuario({ ...uRes.data, nivel });
 
       const history = hRes.data;
