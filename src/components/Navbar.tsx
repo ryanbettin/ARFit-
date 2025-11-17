@@ -66,4 +66,5 @@ export default function Navbar() {
       <Tab.Screen name="Perfil" component={Perfil} />
     </Tab.Navigator>
   );
+
 }
