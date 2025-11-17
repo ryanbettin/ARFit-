@@ -70,4 +70,21 @@ Apesar do aumento da conscientização sobre atividade física, muitas pessoas t
 
 ---
 
+## Instalação e Execução
+Pré-requisitos: **Node 20 LTS**, **Git**, **Expo Go** no dispositivo ou emuladores.
+
+## 1) Clonar
+- git clone https://github.com/ryanbettin/ARFit-.git
+- cd ARFit-
+
+## 2) Instalar dependências
+- npm install
+
+## 3) Variáveis de ambiente (opcional)
+- crie .env e defina, por exemplo: API_URL=https://sua.api
+
+## 4) Rodar
+- npx expo start 
+
+
 
