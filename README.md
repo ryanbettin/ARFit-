@@ -30,7 +30,7 @@ Apesar do aumento da conscientização sobre atividade física, muitas pessoas t
 **Objetivo:** validar uma versão funcional com as funções essenciais:
 - Treinos prontos e personalizados
 - Metas para orientar o usuário
-- Gamificação (XP por exercício/meta e evolução de nível)
+- Gamificação (XP por exercício/meta concluídos e evolução de nível)
 
 ---
 
