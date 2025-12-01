@@ -20,7 +20,7 @@
 A Arfit é uma aplicação mobile focada em promover hábitos saudáveis para iniciantes através de treinos e desafios personalizados e gamificação com xp e experiencia. Com uma interface intuitiva, o app é ideal para pessoas que querem treinar em casa, na academia ou ao ar livre, de forma dinâmica e acompanhada.
 
 ## Motivação
-Apesar do aumento da conscientização sobre atividade física, muitas pessoas têm dificuldade em manter consistência por falta de motivação, orientação e metas. O ARFit atua nesses pontos com treinos prontos/personalizados, desafios e gamificação com niveis 
+A busca por uma vida saudável e ativa tem crescido significativamente nos últimos anos, impulsionada pelo aumento da conscientização sobre os benefícios do exercício físico. No entanto, muitas pessoas(iniciantes) ainda enfrentam dificuldades em manter uma rotina de treinos consistente, seja por falta de motivação, orientação adequada ou metas claras
 
 ---
 
